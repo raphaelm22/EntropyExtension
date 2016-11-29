@@ -9,11 +9,13 @@ namespace EntropyExtension.Core
         public string ApplicationName { get; set; }
         public string Name { get; set; }
         public DateTimeOffset Time { get; set; }
+        public DateTime LocalTime { get; set; }
 
         public LogLevel LogLevel { get; set; }
 
         public HttpInfo HttpInfo { get; set; }
 
         public Exception Exception { get; set; }
+        public string State { get; set; }
     }
 }

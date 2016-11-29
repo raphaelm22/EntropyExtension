@@ -10,7 +10,7 @@
 --output-name:EntropyExtension.SqlServer
 --file-version:1.0.0.0
 --version:1.0.0.0
---informational-version:1.0.0-beta-1
+--informational-version:1.0.0-beta-3
 --target-framework:.NETStandard,Version=v1.6
 --reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Diagnostics.Elm\0.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Diagnostics.Elm.dll
 --reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Http.Abstractions.dll
@@ -77,6 +77,7 @@
 --reference:C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.Core\bin\Debug\netstandard1.6\EntropyExtension.Core.dll
+--resource:"C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\Script\Tables.sql",EntropyExtension.SqlServer.Script.Tables.sql
 C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\EntropySqlServerExtensions.cs
 C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\SqlServerEntropyOptions.cs
 C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\SqlServerEntropyStore.cs

@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v1.6": {},
     ".NETStandard,Version=v1.6/": {
-      "EntropyExtension.Core/1.0.0-beta-1": {
+      "EntropyExtension.Core/1.0.0-beta-3": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "Microsoft.AspNetCore.Diagnostics.Elm": "0.1.0",
@@ -891,7 +891,7 @@
     }
   },
   "libraries": {
-    "EntropyExtension.Core/1.0.0-beta-1": {
+    "EntropyExtension.Core/1.0.0-beta-3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

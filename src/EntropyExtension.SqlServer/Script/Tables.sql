@@ -5,8 +5,10 @@ CREATE TABLE [dbo].[EntropyLog]
 	LogLevel        NVARCHAR(15)     NOT NULL,
 	ApplicationName NVARCHAR(100)    NULL,
 	Name            NVARCHAR(100)    NULL,
-	TimeUtc         DATETIME NOT     NULL,
-	Exception       NVARCHAR(MAX)    NOT NULL
+	TimeUtc         DATETIME         NOT NULL,
+	LocalTime       DATETIME         NULL,
+	Exception       NVARCHAR(MAX)    NOT NULL,
+	StateInfo       NVARCHAR(MAX)    NULL
 )
 ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO

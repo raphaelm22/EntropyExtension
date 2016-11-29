@@ -57,6 +57,7 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll"
+-resource:"C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\Script\Tables.sql",EntropyExtension.SqlServer.Script.Tables.sql
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\EntropySqlServerExtensions.cs"
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\SqlServerEntropyOptions.cs"
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.SqlServer\SqlServerEntropyStore.cs"

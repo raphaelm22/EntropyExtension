@@ -66,9 +66,9 @@ namespace EntropyExtension.SqlServer
         public void Log(EntropyLogInfo info)
         {
             var query = "INSERT INTO [dbo].[EntropyLog] " +
-                       "(LogId,  LogLevel,  ApplicationName,  Name,  TimeUtc,  Exception) " +
+                       "(LogId,  LogLevel,  ApplicationName,  Name,  TimeUtc,  LocalTime,  Exception, StateInfo) " +
                    "VALUES " +
-                       "(@LogId, @LogLevel, @ApplicationName, @Name, @TimeUtc, @Exception); ";
+                       "(@LogId, @LogLevel, @ApplicationName, @Name, @TimeUtc, @LocalTime, @Exception, @StateInfo); ";
 
             if (info.HttpInfo != null)
             {
@@ -90,7 +90,9 @@ namespace EntropyExtension.SqlServer
                 cmd.Parameters.Add(new SqlParameter("@ApplicationName", info.ApplicationName));
                 cmd.Parameters.Add(new SqlParameter("@Name", info.Name));
                 cmd.Parameters.Add(new SqlParameter("@TimeUtc", info.Time));
-                cmd.Parameters.Add(new SqlParameter("@Exception", ex));
+                cmd.Parameters.Add(new SqlParameter("@LocalTime", info.LocalTime));
+                cmd.Parameters.Add(new SqlParameter("@Exception", info.Exception == null ? (object)DBNull.Value : ex));
+                cmd.Parameters.Add(new SqlParameter("@StateInfo", string.IsNullOrWhiteSpace(info.State) ? (object)DBNull.Value : info.State));
 
                 if (info.HttpInfo != null)
                 {

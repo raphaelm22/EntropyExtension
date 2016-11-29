@@ -41,7 +41,9 @@ namespace EntropyExtension.Core
                 Name = _categoryName,
                 HttpInfo = ElmScope.Current?.Context.HttpInfo,
                 Exception = exception,
-                Time = DateTimeOffset.UtcNow
+                Time = DateTimeOffset.UtcNow,
+                LocalTime = DateTime.Now,
+                State = formatter?.Invoke(state, exception)
             };
 
             var stores = _serviceProvider.GetServices<IEntropyStore>();
