@@ -69,6 +69,7 @@
 -r:"C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.Core\EntropyExtensions.cs"
+"C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.Core\EntropyInternalError.cs"
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.Core\EntropyLogger.cs"
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.Core\EntropyLoggerProvider.cs"
 "C:\Users\User\Documents\GitHub\EntropyExtension\src\EntropyExtension.Core\EntropyLogInfo.cs"

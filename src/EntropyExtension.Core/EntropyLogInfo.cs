@@ -8,8 +8,7 @@ namespace EntropyExtension.Core
     {
         public string ApplicationName { get; set; }
         public string Name { get; set; }
-        public DateTimeOffset Time { get; set; }
-        public DateTime LocalTime { get; set; }
+        public DateTime Time { get; set; }
 
         public LogLevel LogLevel { get; set; }
 
@@ -17,5 +16,7 @@ namespace EntropyExtension.Core
 
         public Exception Exception { get; set; }
         public string State { get; set; }
+
+        public string MachineName { get; set; }
     }
 }

@@ -8,14 +8,13 @@ using System;
 namespace EntropyExtension.SqlServer
 {
     public static class EntropySqlServerExtensions
-
     {
         public static IServiceCollection AddEntropySqlServer(this IServiceCollection services)
         {
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
-            services.TryAddSingleton<IEntropyStore, SqlServerEntropyStore>();
+            services.TryAddTransient<IEntropyStore, SqlServerEntropyStore>();
             return services;
         }
 

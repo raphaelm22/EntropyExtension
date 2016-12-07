@@ -31,27 +31,46 @@ namespace EntropyExtension.Core
 
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
-            if (!IsEnabled(logLevel) || !_options.FilterException(exception))
+            if (!IsEnabled(logLevel))
                 return;
 
-            var info = new EntropyLogInfo
+            EntropyLogInfo info;
+            try
             {
-                LogLevel = logLevel,
-                ApplicationName = _options.ApplicationName,
-                Name = _categoryName,
-                HttpInfo = ElmScope.Current?.Context.HttpInfo,
-                Exception = exception,
-                Time = DateTimeOffset.UtcNow,
-                LocalTime = DateTime.Now,
-                State = formatter?.Invoke(state, exception)
-            };
+                info = new EntropyLogInfo
+                {
+                    LogLevel = logLevel,
+                    ApplicationName = _options.ApplicationName,
+                    Name = _categoryName,
+                    HttpInfo = ElmScope.Current?.Context.HttpInfo,
+                    Exception = exception,
+                    Time = DateTime.Now,
+                    State = formatter?.Invoke(state, exception),
+                    MachineName = Environment.MachineName
+                };
+
+                if (!_options.FilterEntropyLogInfo(info))
+                    return;
+            }
+            catch (Exception ex)
+            {
+                EntropyInternalError.Save(ex);
+                return;
+            }
 
             var stores = _serviceProvider.GetServices<IEntropyStore>();
             foreach (var store in stores)
             {
                 Task.Run(delegate
                 {
-                    store.Log(info);
+                    try
+                    {
+                        store.Log(info);
+                    }
+                    catch (Exception ex)
+                    {
+                        EntropyInternalError.Save(ex);
+                    }
                 });
             }
         }
