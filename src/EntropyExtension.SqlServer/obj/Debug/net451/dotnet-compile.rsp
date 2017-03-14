@@ -10,20 +10,22 @@
 --output-name:EntropyExtension.SqlServer
 --file-version:1.0.0.0
 --version:1.0.0.0
---informational-version:1.0.0-beta-4
+--informational-version:1.0.0-beta-5
 --target-framework:.NETFramework,Version=v4.5.1
---reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Diagnostics.Elm\0.1.0\lib\net451\Microsoft.AspNetCore.Diagnostics.Elm.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.0.0\lib\net451\Microsoft.AspNetCore.Http.Abstractions.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Http.Features\1.0.0\lib\net451\Microsoft.AspNetCore.Http.Features.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.DependencyInjection.Abstractions\1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Logging\1.0.0\lib\netstandard1.1\Microsoft.Extensions.Logging.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Logging.Abstractions\1.0.0\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Options\1.0.0\lib\netstandard1.0\Microsoft.Extensions.Options.dll
---reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Primitives\1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Diagnostics.Elm\0.2.1\lib\net451\Microsoft.AspNetCore.Diagnostics.Elm.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.1.1\lib\net451\Microsoft.AspNetCore.Http.Abstractions.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Http.Features\1.1.1\lib\net451\Microsoft.AspNetCore.Http.Features.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.DependencyInjection.Abstractions\1.1.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Logging\1.1.1\lib\netstandard1.1\Microsoft.Extensions.Logging.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Logging.Abstractions\1.1.1\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Options\1.1.1\lib\netstandard1.0\Microsoft.Extensions.Options.dll
+--reference:C:\Users\User\.nuget\packages\Microsoft.Extensions.Primitives\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll
 --reference:C:\Users\User\.nuget\packages\Newtonsoft.Json\9.0.1\lib\net45\Newtonsoft.Json.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Collections.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Collections.Concurrent.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.ComponentModel.dll
+--reference:C:\Users\User\.nuget\packages\System.Data.Common\4.3.0\ref\net451\System.Data.Common.dll
+--reference:C:\Users\User\.nuget\packages\System.Data.SqlClient\4.3.0\ref\net451\System.Data.SqlClient.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Diagnostics.Debug.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Diagnostics.Tools.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Diagnostics.Tracing.dll
@@ -40,13 +42,14 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Reflection.Primitives.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Resources.ResourceManager.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Runtime.dll
+--reference:C:\Users\User\.nuget\packages\System.Runtime.CompilerServices.Unsafe\4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Runtime.Extensions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Runtime.InteropServices.dll
---reference:C:\Users\User\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.0.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll
+--reference:C:\Users\User\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.3.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Runtime.Numerics.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Text.Encoding.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Text.Encoding.Extensions.dll
---reference:C:\Users\User\.nuget\packages\System.Text.Encodings.Web\4.0.0\lib\netstandard1.0\System.Text.Encodings.Web.dll
+--reference:C:\Users\User\.nuget\packages\System.Text.Encodings.Web\4.3.0\lib\netstandard1.0\System.Text.Encodings.Web.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Text.RegularExpressions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Threading.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Threading.Tasks.dll

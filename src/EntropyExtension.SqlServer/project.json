@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta-4",
+  "version": "1.0.0-beta-5",
   "description": "",
   "authors": [ "Raphael Nunes - raphaelm22" ],
   "packOptions": {
@@ -7,8 +7,8 @@
   },
 
   "dependencies": {
-    "EntropyExtension.Core": "1.0.0-beta-4",
-    "NETStandard.Library": "1.6.0",
+    "EntropyExtension.Core": "1.0.0-beta-5",
+    "NETStandard.Library": "1.6.1",
     "Newtonsoft.Json": "9.0.1"
   },
 
@@ -16,12 +16,15 @@
     "netstandard1.6": {
       "imports": "dnxcore50",
       "dependencies": {
-        "System.Data.SqlClient": "4.1.0"
+        "System.Data.SqlClient": "4.3.0"
       }
     },
     "net451": {
       "frameworkAssemblies": {
         "System.Data": "4.0.0.0"
+      },
+      "dependencies": {
+        "System.Data.SqlClient": "4.3.0"
       }
     }
   },
